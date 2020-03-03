@@ -43,6 +43,7 @@
             <ul class="right-icons">
               <li><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://wa.me/254794678476" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
             </ul>
           </div>
         </div>
@@ -84,8 +85,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Our Services</h1>
-            <span>We are over 7 years of experience</span>
+            <div class="ovl">
+              <h1>Our Services</h1>
+              <span>We are over 7 years of experience</span>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -250,7 +254,7 @@
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="" method="POST">
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
@@ -265,19 +269,19 @@
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="phone" type="text" class="form-control" id="name" placeholder="Phone Number"
+                      <input name="phone" type="text" class="form-control" id="phone" placeholder="Phone Number"
                         required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="date" type="date" class="form-control" id="subject" placeholder="YYYY-MM-DD"
+                      <input name="date" type="date" class="form-control" id="date_of_ap" placeholder="YYYY-MM-DD"
                         required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
-                      <select name="hour" class="form-control">
+                      <select name="hour" class="form-control" id="hour">
                         <option value="">Select Time</option>
                         <option value="8.00 am">8.00 am</option>
                         <option value="9.00 am">9.00 am</option>
@@ -411,6 +415,8 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Additional Scripts -->
@@ -418,6 +424,7 @@
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+    
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
@@ -429,6 +436,7 @@
           }
       }
     </script>
+    <script src="assets/js/appointment.js"></script>
 
   </body>
 </html>
